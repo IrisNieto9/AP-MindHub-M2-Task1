@@ -1,0 +1,9 @@
+.vermas-button{
+    background:  rgb(111, 9, 96);
+    text-decoration: none; 
+    text-align: center; 
+    justify-content: center; 
+    display: flex;
+    /* height:3.3vh;
+    width: 5vw; */
+}
