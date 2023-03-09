@@ -58,26 +58,29 @@
       </div>
       
 
-      <div>
-        <form class="d-flex p-1 justify-content-between flex-wrap">
-            <fieldset class="d-flex justify-content-between m-1" style="padding-left: 5vw;">
+        <!-- <div>
+            <form class="d-flex p-1 justify-content-between flex-wrap">
+                <div class="d-flex justify-content-between m-1" style="padding-left: 5vw;" id="checkbox">
 
-                <input type="checkbox" name="category" id="category" value="category" style="padding-right: 50px;">
-                <label for="category" class="p-2" style="margin-right: 3em;">Category</label>
+                    <!-- <input type="checkbox" name="category" id="category" value="category" style="padding-right: 50px;">
+                    <label for="category" class="p-2" style="margin-right: 3em;">Category</label> -->
 
-                <input type="checkbox" name="category" id="category-2" value="category">
-                <label for="category" class="p-2" style="margin-right: 3em;">Category</label>
+                    <!-- <input type="checkbox" name="category" id="category-2" value="category">
+                    <label for="category" class="p-2" style="margin-right: 3em;">Category</label>
 
-                <input type="checkbox" name="category" id="category-3" value="category">
-                <label for="category" class="p-2" style="margin-right: 3em;">Category</label>
+                    <input type="checkbox" name="category" id="category-3" value="category">
+                    <label for="category" class="p-2" style="margin-right: 3em;">Category</label>
 
-                <input type="checkbox" name="category" id="category-4" value="category">
-                <label for="category" class="p-2" style="margin-right: 3em;">Category</label>
+                    <input type="checkbox" name="category" id="category-4" value="category">
+                    <label for="category" class="p-2" style="margin-right: 3em;">Category</label>
 
-                <input type="checkbox" name="category" id="category-5" value="category">
-                <label for="category" class="p-2" style="margin-right: 3em;">Category</label>
-                
-            </fieldset>
+                    <input type="checkbox" name="category" id="category-5" value="category">
+                    <label for="category" class="p-2" style="margin-right: 3em;">Category</label>
+                    
+                </div>
+
+
+            
             <fieldset class="d-flex justify-content-end" style="padding-right: 3vw;">
                 <input type="text" name="search" id="search" value=""  class="rounded p-2" style="width: 20vw;">
                 <button type="submit" class="btn rounded" style="margin-left: 10px; background-color: rgb(162, 99, 153); ">
@@ -86,71 +89,90 @@
                 
             </fieldset>
           </form>
+        </div>-->
+
+        
+        <div class="section-search">
+            <form class="container-category d-flex p-2 justify-content-between flex-wrap" id="search-form">
+                <div class=" d-flex justify-content-between m-1 flex-wrap" id="checkbox">
+
+                    <!-- <input type="checkbox" name="category" id="category-1" value="category">
+                    <label for="category-1" class="label-category p-2">Category</label> -->
+                    
+                </div>
+                <fieldset class="search-container">
+                    <input type="text" id="search" placeholder="Search here..." class="search rounded p-2 border-info">
+                    <button type="submit" class=" search-button btn-primary rounded border-0">
+                        <i class="bi bi-search text-white"></i>
+                    </button>
+                    
+                </fieldset>
+            </form>
         </div>
-
-      <section class="seccard d-flex justify-content-around m-2 pb-2 flex-wrap">
-        <!-- <div class="card d-flex justify-content-center bg-body-tertiary rounded border-danger-subtle">
-            <div class="image-card m-2">
-                <img src="./imagenes/Cinema.jpg" alt="Cinema card" class="rounded-3">
-            </div>
-            <div class="detail-card text-center m-3">
-                <h3>Título</h3>
-                <p>Texto descriptivo</p>
-            </div>
-            <div class="price-card d-flex justify-content-between m-4">
-                <h4>Price $0000</h4> 
-                <a href="./Details.html" class="vermas-button rounded text-white border-0 p-2">ver más...
-                </a>
-            </div>
-        </div> -->
-
     
-        <!-- <div class="card d-flex justify-content-center bg-body-tertiary rounded border-danger-subtle">
-            <div class="image-card m-3">
-                <img src="./imagenes/Cinema.jpg" alt="Cinema card" class="rounded-3">
-            </div>
-            <div class="detail-card text-center m-3">
-                <h3>Título</h3>
-                <p>Texto descriptivo</p>
-            </div>
-            <div class="price-card d-flex justify-content-between m-4">
-                <h4>Price $0000</h4>
-                <a href="./Details.html" class="vermas-button rounded text-white border-0 p-2">ver más...
-                </a>
-            </div> 
-        </div>
 
-        <div class="card d-flex justify-content-center bg-body-tertiary rounded border-danger-subtle">
-            <div class="image-card m-3">
-                <img src="./imagenes/Cinema.jpg" alt="Cinema card" class="rounded-3">
-            </div>
-            <div class="detail-card text-center m-3">
-                <h3>Título</h3>
-                <p>Texto descriptivo</p>
-            </div>
-            <div class="price-card d-flex justify-content-between m-4">
-                <h4>Price $0000</h4>
-                <a href="./Details.html" class="vermas-button rounded text-white border-0 p-2">ver más...
-                </a>
-            </div>
-        </div>
+        <section class="seccard d-flex justify-content-around m-2 pb-2 flex-wrap" id="cardEvents">
+            <!-- <div class="card d-flex justify-content-center bg-body-tertiary rounded border-danger-subtle">
+                <div class="image-card m-2">
+                    <img src="./imagenes/Cinema.jpg" alt="Cinema card" class="rounded-3">
+                </div>
+                <div class="detail-card text-center m-3">
+                    <h3>Título</h3>
+                    <p>Texto descriptivo</p>
+                </div>
+                <div class="price-card d-flex justify-content-between m-4">
+                    <h4>Price $0000</h4> 
+                    <a href="./Details.html" class="vermas-button rounded text-white border-0 p-2">ver más...
+                    </a>
+                </div>
+            </div> -->
 
-        <div class="card d-flex justify-content-center bg-body-tertiary rounded border-danger-subtle">
-            <div class="image-card m-3">
-                <img src="./imagenes/Cinema.jpg" alt="Cinema card" class="rounded-3">
+        
+            <!-- <div class="card d-flex justify-content-center bg-body-tertiary rounded border-danger-subtle">
+                <div class="image-card m-3">
+                    <img src="./imagenes/Cinema.jpg" alt="Cinema card" class="rounded-3">
+                </div>
+                <div class="detail-card text-center m-3">
+                    <h3>Título</h3>
+                    <p>Texto descriptivo</p>
+                </div>
+                <div class="price-card d-flex justify-content-between m-4">
+                    <h4>Price $0000</h4>
+                    <a href="./Details.html" class="vermas-button rounded text-white border-0 p-2">ver más...
+                    </a>
+                </div> 
             </div>
-            <div class="detail-card text-center m-3">
-                <h3>Título</h3>
-                <p>Texto descriptivo</p>
-            </div>
-            <div class="price-card d-flex justify-content-between m-4">
-                <h4>Price $0000</h4>
-                <a href="./Details.html" class="vermas-button rounded text-white border-0 p-2">ver más...
-                </a>
-            </div>
-        </div> -->
 
-      </section>
+            <div class="card d-flex justify-content-center bg-body-tertiary rounded border-danger-subtle">
+                <div class="image-card m-3">
+                    <img src="./imagenes/Cinema.jpg" alt="Cinema card" class="rounded-3">
+                </div>
+                <div class="detail-card text-center m-3">
+                    <h3>Título</h3>
+                    <p>Texto descriptivo</p>
+                </div>
+                <div class="price-card d-flex justify-content-between m-4">
+                    <h4>Price $0000</h4>
+                    <a href="./Details.html" class="vermas-button rounded text-white border-0 p-2">ver más...
+                    </a>
+                </div>
+            </div>
+
+            <div class="card d-flex justify-content-center bg-body-tertiary rounded border-danger-subtle">
+                <div class="image-card m-3">
+                    <img src="./imagenes/Cinema.jpg" alt="Cinema card" class="rounded-3">
+                </div>
+                <div class="detail-card text-center m-3">
+                    <h3>Título</h3>
+                    <p>Texto descriptivo</p>
+                </div>
+                <div class="price-card d-flex justify-content-between m-4">
+                    <h4>Price $0000</h4>
+                    <a href="./Details.html" class="vermas-button rounded text-white border-0 p-2">ver más...
+                    </a>
+                </div>
+            </div> -->
+        </section>
       <br>
       
     </main>
@@ -173,6 +195,8 @@
 
     <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/searcheck.js"></script>
+    
 
 </body>
 </html>
