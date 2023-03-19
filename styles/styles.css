@@ -7,3 +7,37 @@
     /* height:3.3vh;
     width: 5vw; */
 }
+
+.secard{
+    width: 24rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex{
+    background-color:rgb(231, 193, 227);
+}
+
+.nav-link{
+    background-color: rgb(212, 45, 187); 
+}
+
+.anterior{
+    font-size: 3em; 
+    color: #fff;
+}
+
+.posterior{
+    font-size: 3em;
+    color: #fff;
+}
+
+.m-5{
+    background-color: rgb(254, 253, 253);
+}
+
+.m-1{
+    padding-left: 1vw; 
+    font-size: 1.2em; 
+    display: inline-block;
+}

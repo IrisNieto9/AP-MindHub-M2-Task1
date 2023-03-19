@@ -34,7 +34,7 @@ let returnValueCheckBox = (array)=>{
 }
 
 let returnValueSearch = () => {
-    let cardsFilter = arrayEvents.filter(event => event.name.toLowerCase().includes(searchContainer.value.toLowerCase()))
+    let cardsFilter = arrayEvents.filter(event => event.name.toLowerCase().includes(searchContainer.value.toLowerCase()) || event.description.toLowerCase().includes(searchContainer.value.toLowerCase() ))
 
     if(document.querySelectorAll('input[type="checkbox"]:checked').length == 0){
        render(renderCardsSearch(cardsFilter), "cardEvents")
@@ -49,7 +49,7 @@ let renderCardsSearch = (array)=>{
     array.forEach(card => {
         template.push(`<div class="card d-flex justify-content-center bg-body-tertiary rounded border-danger-subtle">
         <div class="image-card m-2">
-            <img src="${card.image}" alt="Cinema card" class="rounded-3">
+            <img src="${card.image}" alt="Cinema card" class="card-img-top rounded-3">
         </div>
         <div class="detail-card text-center m-3">
             <h3>${card.name}</h3>

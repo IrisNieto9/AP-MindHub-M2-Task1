@@ -1,14 +1,14 @@
 let callEvents = (data)=>{
 
-let cardEvents = document.querySelector("section.seccard")
+let cardEvents = document.querySelector("section.secard")
 
 
     cardEvents.innerHTML = ''
     for(let event of data.events){
             
-        cardEvents+=`<div class="card d-flex justify-content-center bg-body-tertiary rounded border-danger-subtle">
+        cardEvents.innerHTML+=`<div class="card d-flex flex-wrap justify-content-center bg-body-tertiary rounded border-danger-subtle" style="width: 24 rem;">
         <div class="image-card m-2">
-            <img src="${event.image}" alt="Cinema card" class="rounded-3">
+            <img src="${event.image}" alt="Cinema card" class="card-img-top rounded-3">
         </div>
         <div class="detail-card text-center m-3">
             <h3>${event.name}</h3>

@@ -15,28 +15,23 @@ if (eventDate < currentDate) {
 
 
 let detailContainer = document.getElementById("details-container")
+
 let detailCardOpen=  `
-<div class="d-flex justify-content-center">
-        <div class="card m-5 p-4 mb-6 border-danger-subtle align-content-center " >
-          <div class="flex-row g-0 d-flex m-4" style="width: 50vw; height: 40vh;">
-            <div class="col-md-4 d-flex" style="width: 35vw;">
-              <img src="${events.image}" class="rounded float-start" alt="Gente en el cine" style="height: 13vw;">
-            </div>
-            <div class="m-2 d-flex">
-              <div class="card-body">
-                <h2 class="card-title  fs-1">${events.name}</h2>
-                <p class="card-text text-end">${events.description}</p>
-                <div>
-                    <h4 class="">$ ${events.price}</h4>
-                    ${asistenciaPast}
-                </div>        
-              </div>
-            </div>
+  <div class="card m-5 p-4 mb-6 border-danger-subtle align-content-center " >
+      <div class="flex-row g-0 d-flex m-4" style="width: 50vw; height: 40vh;">
+        <div class="col-md-4 d-flex" style="width: 35vw;">
+          <img src="${events.image}" class="rounded float-start" alt="Gente en el cine" style="height: 13vw;">
+        </div>
+        <div class="m-2 d-flex">
+          <div class="card-body">
+            <h3 class="card-title  fs-1">${events.name}</h3>
+            <p class="card-text text-end">${events.description}</p>
+            <p class="card-text text-end">$ ${events.price}</p>
+            <p class="card-text text-end">${asistenciaPast}</p>
           </div>
         </div>
       </div>
-    
-        `;
+    </div>`;
         
 detailContainer.innerHTML += detailCardOpen;
 
@@ -54,3 +49,6 @@ detailContainer.innerHTML += detailCardOpen;
     //             </div>
     //         </div>
     //     </div>
+
+
+    
