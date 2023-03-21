@@ -8,15 +8,13 @@
     width: 5vw; */
 }
 
-.secard{
-    width: 24rem;
-    display: flex;
-    flex-wrap: wrap;
+.h-img{
+    height: 14rem;
+    width: 100%;
+    object-fit: cover;
 }
 
-.d-flex{
-    background-color:rgb(231, 193, 227);
-}
+
 
 .nav-link{
     background-color: rgb(212, 45, 187); 
@@ -39,5 +37,8 @@
 .m-1{
     padding-left: 1vw; 
     font-size: 1.2em; 
+    display: inline-block;
+}
+.card{
     display: inline-block;
 }
