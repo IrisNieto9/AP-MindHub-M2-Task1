@@ -8,6 +8,13 @@
     width: 5vw; */
 }
 
+.vermas-button:hover{
+    
+    background-color: rgb(212, 45, 187); 
+    transition: background-color .3s ease;
+
+}
+
 .h-img{
     height: 14rem;
     width: 100%;
@@ -41,7 +48,12 @@
 .nav-link{
     background-color: rgb(212, 45, 187); 
 }
+.nav-link:hover{
+    
+    background-color: rgb(214, 117, 200);
+    transition: background-color .3s ease;
 
+}
 .anterior{
     font-size: 3em; 
     color: #fff;
